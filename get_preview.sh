@@ -26,8 +26,8 @@ while IFS= read -r url; do
     echo "Error while getting preview, skipping $url"
     continue
   fi
-  title=$(echo "$rawpreview" | grep -o 'title:.*' | awk -F ': ' '{print $2}')
-  description=$(echo "$rawpreview" | grep -o 'description:.*' | awk -F ': ' '{print $2}')
+  title=$(echo "$rawpreview" | rg -o 'title:.*' | awk -F ': ' '{print $2}')
+  description=$(echo "$rawpreview" | rg -o 'description:.*' | awk -F ': ' '{print $2}')
   
   echo "- [$title]($url): $description"
   if [ -n "$title" ]; then
