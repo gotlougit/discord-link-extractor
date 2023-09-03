@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+set -euo pipefail
 # Define the initial offset value
 offset=0
 
