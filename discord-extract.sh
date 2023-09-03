@@ -52,8 +52,8 @@ while true; do
   echo "$url"
   echo "$url" >> $output_file".tmp"
  
-  # Increment the offset by 26
-  offset=$((offset + 26))
+  # Increment the offset by 25
+  offset=$((offset + 25))
 done
 
 echo "Sorting obtained URLs..."
