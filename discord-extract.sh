@@ -64,4 +64,3 @@ if [ "$error_occurred" = true ]; then
 else
   echo "API calls completed successfully, and unique URLs saved to $output_file."
 fi
-
